@@ -85,6 +85,7 @@ spec:
             - --pass-access-token
             # - '--openshift-delegate-urls={"/": {"resource": "projects", "verb": "list"}}'
             - --skip-auth-regex=^/metrics
+            - --email-domain="*"
           image: oauth-proxy
           ports:
             - containerPort: 8443
