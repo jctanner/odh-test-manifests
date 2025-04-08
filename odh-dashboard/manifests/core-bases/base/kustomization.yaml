@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - role.yaml
+  - cluster-role.yaml
+  - service-account.yaml
+  - role-binding.yaml
+  - cluster-role-binding.yaml
+  - auth-delegator.clusterrolebinding.yaml
+  - cluster-monitoring-role-binding.yaml
+  - deployment.yaml
+  - routes.yaml
+  - service.yaml
+  - oauth.secret.yaml
+  - fetch-builds-and-images.rbac.yaml
+  - image-puller.clusterrolebinding.yaml
+  - model-serving-role.yaml
+  - model-serving-role-binding.yaml
+  - fetch-accelerators.rbac.yaml
+  - fetch-hardwares.rbac.yaml
+  - fetch-nim-account.rbac.yaml
+images:
+  - name: oauth-proxy
+    #newName: registry.redhat.io/openshift4/ose-oauth-proxy
+    #digest: sha256:4f8d66597feeb32bb18699326029f9a71a5aca4a57679d636b876377c2e95695
+    newName: registry.tannerjc.net/oauth2-proxy/oauth2-proxy
+    digest: sha256:f8482b88306f0b6473124009bb164677f286a25c728afcadb3507f9f2cdbafe2
