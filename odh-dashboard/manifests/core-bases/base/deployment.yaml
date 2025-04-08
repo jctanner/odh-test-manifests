@@ -80,7 +80,7 @@ spec:
             - --client-secret-file=/etc/oauth/client/secret
             - --scope=user:full
             # - --cookie-secret-file=/etc/oauth/config/cookie_secret
-            --cookie-secret="SUPERSECRET!!!!"
+            --cookie-secret=SUPERSECRET12345
             - --cookie-expire=23h0m0s
             - --pass-access-token
             # - '--openshift-delegate-urls={"/": {"resource": "projects", "verb": "list"}}'
