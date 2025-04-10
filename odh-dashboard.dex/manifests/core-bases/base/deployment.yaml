@@ -101,6 +101,7 @@ spec:
             - --set-authorization-header=true
             - --pass-access-token=true
             - "--scope=openid email profile"
+            - --set-xauthrequest=true
 
           image: oauth-proxy
           ports:
