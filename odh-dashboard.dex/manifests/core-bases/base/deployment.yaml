@@ -80,6 +80,7 @@ spec:
             - --client-id=dashboard-oauth-client
             - --client-secret=SUPERSECRET12345
             # - --scope=user:full
+            - --scope="openid email profile"
             - --cookie-secret=SUPERSECRET12345
             - --cookie-expire=23h0m0s
             - --pass-access-token
