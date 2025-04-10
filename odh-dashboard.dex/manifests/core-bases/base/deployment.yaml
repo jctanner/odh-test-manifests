@@ -92,6 +92,11 @@ spec:
             - --insecure-oidc-skip-nonce
             - --ssl-insecure-skip-verify
             - --ssl-upstream-insecure-skip-verify
+
+            - --set-xauthrequest=true
+            - --pass-authorization-header=true
+            - --pass-access-token=true
+
           image: oauth-proxy
           ports:
             - containerPort: 8443
