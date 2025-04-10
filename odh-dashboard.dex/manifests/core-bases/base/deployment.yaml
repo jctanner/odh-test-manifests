@@ -79,7 +79,7 @@ spec:
             - --tls-key-file=/etc/tls/private/tls.key
             - --client-id=dashboard-oauth-client
             - --client-secret=SUPERSECRET12345
-            - --scope=user:full
+            # - --scope=user:full
             - --cookie-secret=SUPERSECRET12345
             - --cookie-expire=23h0m0s
             - --pass-access-token
