@@ -81,7 +81,7 @@ spec:
             - --client-secret=SUPERSECRET12345
             # - --scope=user:full
             #- --scope="openid email profile"
-            - --scope=openid
+            # - --scope=openid
             - --cookie-secret=SUPERSECRET12345
             - --cookie-expire=23h0m0s
             - --pass-access-token
@@ -96,6 +96,11 @@ spec:
             - --set-xauthrequest=true
             - --pass-authorization-header=true
             - --pass-access-token=true
+
+            - --skip-provider-button=true
+            - --set-authorization-header=true
+            - --pass-access-token=true
+            - "--scope=openid email profile"
 
           image: oauth-proxy
           ports:
