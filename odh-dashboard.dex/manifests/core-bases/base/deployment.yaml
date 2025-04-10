@@ -73,6 +73,7 @@ spec:
           args:
             - --https-address=:8443
             - --provider=oidc
+            - --oidc-issuer-url=https://dex.apps-crc.testing
             - --upstream=http://localhost:8080
             - --tls-cert-file=/etc/tls/private/tls.crt
             - --tls-key-file=/etc/tls/private/tls.key
